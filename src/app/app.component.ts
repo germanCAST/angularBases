@@ -6,9 +6,4 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   public title: string = 'Hola mundo, soy German';
-  public counter: number = 10;
-
-  operacion(valor: number) {
-    this.counter = this.counter + valor;
-  }
 }

@@ -1,0 +1,28 @@
+<p>{{ heroName }}</p>
+<dl class="">
+  <dt>Name</dt>
+  <dd>{{ heroName }}</dd>
+
+  <dt>Age</dt>
+  <dd>{{ heroAge }}</dd>
+
+  <dt>Description</dt>
+  <dd>{{ heroDesc }}</dd>
+
+  <dt>Capitalizado no PIPES</dt>
+  <dd>{{ heroCapit() }}</dd>
+</dl>
+<button
+  *ngIf="heroName === 'Batman'"
+  (click)="changeName()"
+  class="btn btn-primary mx-2"
+>
+  Cambiar nombre
+</button>
+<button
+  *ngIf="heroAge === 33"
+  (click)="changeAge()"
+  class="btn btn-primary mx-2"
+>
+  Cambiar edad
+</button>
